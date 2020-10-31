@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".View.login">
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:id="@+id/logo"
+        android:src="@drawable/logo1"
+        android:layout_marginTop="150dp"
+
+        android:layout_centerHorizontal="true"
+        />
+    <EditText
+
+        android:id="@+id/tenuser"
+        android:layout_below="@+id/logo"
+        android:layout_width="320dp"
+        android:layout_marginTop="50dp"
+        android:layout_height="40dp"
+        android:hint="Nhập tài khoản..."
+        android:background="@drawable/botronlogineditext"
+        android:text=""
+        android:layout_centerInParent="true"
+        android:paddingLeft="10dp"
+        android:textSize="15sp"
+        android:textColorHint="#070707"
+        android:textStyle="normal"
+        />
+    <EditText
+        android:id="@+id/passworduser"
+        android:layout_below="@+id/tenuser"
+        android:layout_marginTop="5dp"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:hint="Nhập mật khẩu..."
+        android:background="@drawable/botronlogineditext"
+        android:text=""
+        android:layout_centerInParent="true"
+        android:paddingLeft="10dp"
+        android:textSize="15sp"
+        android:textColorHint="#0C0C0C"
+        android:textStyle="normal"
+        />
+    <TextView
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/dangki"
+        android:text="forgot your password?"
+        android:textStyle="italic"
+        android:layout_marginTop="5dp"
+        android:gravity="right"
+        android:textColor="#f000"
+        android:layout_below="@+id/passworduser"/>
+    <LinearLayout
+        android:layout_width="320dp"
+        android:id="@+id/nnn"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dangki"
+        android:layout_centerInParent="true"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_below="@+id/dangki"
+            android:layout_height="50dp"
+            android:id="@+id/btnLogin"
+            android:layout_marginTop="5dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/animationbuttonlogin"
+            android:text="Login"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/nnn"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:textColor="#000000"
+            android:textStyle="italic"
+            android:text="Don't have an account?"/>
+        <TextView
+            android:id="@+id/tvSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="#E60B0B"
+            android:text="Sign Up"/>
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
